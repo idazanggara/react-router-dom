@@ -2,6 +2,7 @@ import './App.css'
 import About from './Pages/About'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
+import NotFound from './Pages/NotFound'
 import Product from './Pages/Product'
 import ProtectedRoute from './Routes/ProtectedRoute'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
@@ -36,7 +37,7 @@ function App() {
             </ProtectedRoute>
           } />
         <Route path="/login" element={<Login />} />
-        <Route path='*' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
